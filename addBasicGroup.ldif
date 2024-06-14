@@ -1,0 +1,7 @@
+dn: ou=Users,dc=x,dc=y,dc=z
+objectClass: organizationalUnit
+ou: Users
+
+dn: ou=Groups,dc=x,dc=y,dc=z
+objectClass: organizationalUnit
+ou: Groups
