@@ -20,7 +20,9 @@ ldapadd -x -D cn=admin,dc=x,dc=y,dc=z -W -f addBasicGroup.ldif
 Enable memberOf
 ----------------
 sudo ldapadd -Q -Y EXTERNAL -H ldapi:/// -f addMemberOf.ldif
+
 sudo ldapmodify -Q -Y EXTERNAL -H ldapi:/// -f refint1.ldif
+
 sudo ldapadd -Q -Y EXTERNAL -H ldapi:/// -f refint2.ldif
 
 Add Our Groups
