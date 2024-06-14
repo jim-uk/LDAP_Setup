@@ -7,6 +7,7 @@ Edit ldap.conf
 Throughout this guide we will issue many commands with the LDAP utilities. To save some typing, we can configure the OpenLDAP libraries with certain defaults in /etc/ldap/ldap.conf (adjust these entries for your server name and directory suffix):
 
 BASE dc=x,dc=y,dc=z
+
 URI ldap://ldap.x.y.z
 
 Check admin permissions
