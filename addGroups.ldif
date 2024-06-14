@@ -1,0 +1,15 @@
+dn: cn=remoteusers,ou=Groups,dc=x,dc=y,dc=z
+objectClass: groupofnames
+cn: remoteusers
+description: All users
+# add the group members all of which are
+# assumed to exist under people
+member: uid=admins,ou=Users,dc=x,dc=y,dc=z
+
+dn: cn=admins,ou=Groups,dc=x,dc=y,dc=z
+objectClass: groupofnames
+cn: admins
+description: All users
+# add the group members all of which are
+# assumed to exist under people
+member: uid=admins,ou=Users,dc=x,dc=y,dc=z
