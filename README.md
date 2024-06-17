@@ -39,6 +39,7 @@ sudo pico /etc/ldapscripts/ldapscripts.conf
 * Save the ldap admin password for ldapscripts
 
 echo -n 'password' | sudo tee /etc/ldapscripts/ldapscripts.passwd
+
 sudo chmod 400 /etc/ldapscripts/ldapscripts.passwd
 
 Add our Users
