@@ -28,7 +28,7 @@ sudo ldapadd -Q -Y EXTERNAL -H ldapi:/// -f refint2.ldif
 
 Add Our Groups
 --------------
-sudo ldapadd -Q -Y EXTERNAL -H ldapi:/// -f addGroups.ldif
+sudo ldapadd -x -D cn=admin,dc=x,dc=y,dc=z -W -f addGroups.ldif
 
 Configure LDAP Scripts
 ---------------------
@@ -47,7 +47,7 @@ sudo ldapaddusertogroup <username> <group>
 
 Verification
 ------------
-ldapsearch -x -LLL -b dc=x,dc=y,dc=z \* +
+ldapsearch -x -LLL -b dc=x,dc=y,dc=z \\* +
 
 
 Not Don't use:
